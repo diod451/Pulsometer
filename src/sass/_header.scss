@@ -1,0 +1,35 @@
+.main {
+	width: 100%;
+	// min-height: 650px;
+	height: 100vh;
+	background: 10% (center / cover) no-repeat url("../img/header__bg.png");
+}
+
+.header {
+	padding-top: 24px;
+	display: flex;
+	justify-content: space-between;
+	height: 50px;
+	color: var(--text-color-main);
+
+	&__logo {
+		& img {
+			height: 100%;
+		}
+	}
+
+	&__title {
+		font-family: "Museo";
+		font-weight: 500;
+		font-size: 12px;
+		font-variation-settings: 'opsz' 8;
+		text-align: center;
+
+		& span {
+			display: block;
+			font-size: 18px;
+			padding-top: 12px;
+
+		}
+	}
+}
