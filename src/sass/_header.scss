@@ -3,10 +3,80 @@
 	// min-height: 650px;
 	height: 100vh;
 	background: 10% (center / cover) no-repeat url("../img/header__bg.png");
+
+	&__about {
+		text-align: right;
+		margin-top: 166px;
+		color: var(--text-color-main);
+	}
+
+	&__title {
+		margin: 0;
+		text-transform: uppercase;
+		font-size: 62px;
+		font-weight: 700;
+	}
+
+	&__subtitle {
+		font-size: 36px;
+		font-weight: 500;
+		text-transform: uppercase;
+		margin-top: 17px;
+	}
+
+	&__features {
+		margin-top: 80px;
+		display: flex;
+		flex-direction: row;
+		justify-content: end;
+
+		&__elem {
+			display: flex;
+			width: 20%;
+			justify-content: baseline;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		&__img {}
+
+		&__text {
+			margin-top: 20px;
+			padding: 0 10px;
+			font-size: 21px;
+			font-weight: 300;
+			text-align: center;
+		}
+	}
+
+	&__buttons {
+		margin-top: 120px;
+	}
+
+	&__button {
+		padding: 19px 43px 17px;
+		font-size: 22px;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+
+	&__link {
+		display: block;
+		margin-top: 18px;
+		text-decoration: none;
+		color: var(--text-color-main);
+		font-size: 22px;
+		font-weight: 500;
+
+		& span {
+			text-transform: uppercase;
+			text-decoration: underline;
+		}
+	}
 }
 
 .header {
-	padding-top: 24px;
+	padding-top: 36px;
 	display: flex;
 	justify-content: space-between;
 	height: 50px;
@@ -20,16 +90,31 @@
 
 	&__title {
 		font-family: "Museo";
-		font-weight: 500;
-		font-size: 12px;
-		font-variation-settings: 'opsz' 8;
+		font-weight: 300;
+		font-size: 18px;
 		text-align: center;
 
 		& span {
 			display: block;
-			font-size: 18px;
+			font-size: 26px;
+			font-weight: 500;
 			padding-top: 12px;
 
+		}
+	}
+
+	&__call {
+		&__number {
+			font-size: 24px;
+			font-weight: 700;
+		}
+
+		&__button {
+			padding: 10px 21px 11px 19px;
+			margin-top: 8px;
+			font-size: 20px;
+			font-weight: 500;
+			text-transform: uppercase;
 		}
 	}
 }

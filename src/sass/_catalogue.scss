@@ -1,0 +1,138 @@
+.catalogue {
+	&__title {
+		font-size: 30px;
+		font-weight: 700;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	&__buttons {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	&__button {
+
+		margin: 0 30px;
+		border-radius: 0;
+		padding: 20px 46px;
+		min-width: 220px;
+		position: relative;
+		font-size: 18px;
+		font-weight: 500;
+		color: var(--text-color-main);
+		text-decoration: none;
+		text-transform: uppercase;
+
+		&:before {
+			content: "";
+			border-right: 0;
+			position: absolute;
+			top: 0px;
+			bottom: 0px;
+			left: -20px;
+			transform: skew(-15deg);
+			width: 40px;
+			background-color: var(--button-color);
+		}
+
+		&:after {
+			content: "";
+			border-left: 0;
+			position: absolute;
+			top: 0px;
+			bottom: 0px;
+			right: -20px;
+			transform: skew(-15deg);
+			width: 40px;
+			background-color: var(--button-color);
+		}
+
+		&:hover {
+			background: #333;
+
+			&:before {
+				background: #333;
+			}
+
+			&:after {
+				background: #333;
+			}
+		}
+	}
+
+	&__products {
+		margin-top: 69px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		width: 23%;
+		max-width: 246px;
+		max-height: 440px;
+		text-align: center;
+		border: solid 2px var(--border-color);
+		padding: 20px 40px 26px 40px;
+		margin: 10px;
+	}
+}
+
+.item {
+	&__img {}
+
+	&__title {
+		font-size: 16px;
+		font-weight: 700;
+	}
+
+	&__text {
+		margin-top: 16px;
+		margin-bottom: 17px;
+		font-size: 14px;
+		font-weight: 300;
+	}
+
+	&__link {
+		display: block;
+		margin-bottom: 40px;
+		font-size: 14px;
+		font-weight: 500;
+		text-decoration: underline;
+		text-transform: uppercase;
+		color: var(--text-color-colored);
+	}
+
+	&__price {
+		text-align-last: left;
+
+		&-crossed {
+			text-decoration: line-through;
+			color: var(--text-color-main-tranc);
+			font-size: 14px;
+			font-weight: 300;
+		}
+
+		&-common {
+			font-size: 20px;
+			font-weight: 700;
+		}
+	}
+
+	&__block {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center
+	}
+
+	&__button {
+		font-size: 14px;
+		font-weight: 500;
+		padding: 16px 37px 14px 40px;
+	}
+}

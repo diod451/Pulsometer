@@ -1,8 +1,40 @@
+body {
+	font-family: sans-serif, 'Museo';
+}
+
+ul {}
+
 .container {
-	width: 60%;
+	width: 940px;
 	margin: 0 auto;
+}
+
+.button {
+	border: none;
+	color: var(--text-color-main);
+	background-color: var(--button-color);
+	border-radius: 6px;
+
+	&__mini {
+		width: 131px;
+		height: 40px;
+		padding: 15px 37px 15px 40px;
+		font-size: 14px;
+		font-weight: 500;
+	}
+}
+
+.input {
+	border-radius: 5px;
+	margin-bottom: 15px;
 }
 
 @import 'variables';
 @import 'fonts';
 @import 'header';
+@import 'benefits';
+@import 'consultation';
+@import 'catalogue';
+@import 'catalog';
+@import 'reviews';
+@import 'carousele';

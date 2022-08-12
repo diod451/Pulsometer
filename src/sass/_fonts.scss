@@ -1,6 +1,20 @@
 @font-face {
 	font-family: 'Museo';
-	src: url('../fonts/MuseoModerno-VariableFont_wght.ttf');
-	font-weight: 100 1000;
-	font-stretch: 25% 151%;
+	src: url('../fonts/Museo/Museo\ Sans\ Cyrl\ 300.ttf');
+	font-style: normal;
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'Museo';
+	src: url('../fonts/Museo/Museo\ Sans\ Cyrl\ 500.ttf');
+	font-style: normal;
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'Museo';
+	src: url('../fonts/Museo/Museo\ Sans\ Cyrl\ 700.ttf');
+	font-style: normal;
+	font-weight: 700;
 }
