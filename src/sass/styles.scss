@@ -1,5 +1,6 @@
 body {
 	font-family: sans-serif, 'Museo';
+	box-sizing: border-box;
 }
 
 ul {}
@@ -14,6 +15,7 @@ ul {}
 	color: var(--text-color-main);
 	background-color: var(--button-color);
 	border-radius: 6px;
+	cursor: pointer;
 
 	&__mini {
 		width: 131px;
@@ -38,3 +40,5 @@ ul {}
 @import 'catalog';
 @import 'reviews';
 @import 'carousele';
+@import 'footer';
+@import 'modal';

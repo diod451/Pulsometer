@@ -22,7 +22,7 @@
 				<div class="header__title">Официальный представитель<br><span>Garmin, Polar, Suunto</span></div>
 				<div class="header__call">
 					<div class="header__call__number">+7 (499) 922-89-74</div>
-					<button class="button header__call__button">заказать звонок</button>
+					<button data-modal="consultation" class="button header__call__button">заказать звонок</button>
 				</div>
 			</header>
 
@@ -44,7 +44,7 @@
 					</div>
 				</div>
 				<div class="main__buttons">
-					<button class="button main__button">заказать консультацию</button>
+					<button data-modal="consultation" class="button main__button">заказать консультацию</button>
 					<a href="#" class="main__link">или <span>перейти в каталог</span></a>
 				</div>
 			</div>
@@ -84,9 +84,9 @@
 			<div class="consultation__subtitle">Просто заполните форму заявки и мы перезвоним вам в течении 10 минут</div>
 
 			<form action="" class="consultation__form">
-				<input class="input consultation__form__item" type="text" placeholder="Ваше имя">
-				<input class="input consultation__form__item" type="text" placeholder="Ваш телефон">
-				<input class="input consultation__form__item" type="email" placeholder="Ваш E-mail">
+				<input class="input consultation__form__item" name="name" type="text" placeholder="Ваше имя">
+				<input class="input consultation__form__item" name="phone" type="tel" placeholder="Ваш телефон">
+				<input class="input consultation__form__item" name="email" type="email" placeholder="Ваш E-mail">
 				<button class="button consultation__form__item consultation__form__button">Заказать консультацию</button>
 			</form>
 		</div>
@@ -148,7 +148,7 @@
 				<div class="catalog-item__wrapper">
 					<div class="catalog-item__content catalog-item__content-active">
 						<img src="../img/catalogue__item.png" alt="" class="catalog-item__img">
-						<div class="catalog-item__title">Пульсометр Polar FT1</div>
+						<div class="catalog-item__title">Пульсометр Suunto M2</div>
 						<div class="catalog-item__text">Для первых шагов в тренировках, основанных на сердечном ритме</div>
 						<a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
 					</div>
@@ -174,7 +174,7 @@
 				<div class="catalog-item__wrapper">
 					<div class="catalog-item__content catalog-item__content-active">
 						<img src="../img/catalogue__item.png" alt="" class="catalog-item__img">
-						<div class="catalog-item__title">Пульсометр Polar FT1</div>
+						<div class="catalog-item__title">Пульсометр Polar FT4</div>
 						<div class="catalog-item__text">Для первых шагов в тренировках, основанных на сердечном ритме</div>
 						<a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
 					</div>
@@ -200,7 +200,7 @@
 				<div class="catalog-item__wrapper">
 					<div class="catalog-item__content catalog-item__content-active">
 						<img src="../img/catalogue__item.png" alt="" class="catalog-item__img">
-						<div class="catalog-item__title">Пульсометр Polar FT1</div>
+						<div class="catalog-item__title">Пульсометр Polar FT3</div>
 						<div class="catalog-item__text">Для первых шагов в тренировках, основанных на сердечном ритме</div>
 						<a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
 					</div>
@@ -226,7 +226,7 @@
 				<div class="catalog-item__wrapper">
 					<div class="catalog-item__content catalog-item__content-active">
 						<img src="../img/catalogue__item.png" alt="" class="catalog-item__img">
-						<div class="catalog-item__title">Пульсометр Polar FT1</div>
+						<div class="catalog-item__title">Пульсометр Polar FT7</div>
 						<div class="catalog-item__text">Для первых шагов в тренировках, основанных на сердечном ритме</div>
 						<a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
 					</div>
@@ -252,7 +252,7 @@
 				<div class="catalog-item__wrapper">
 					<div class="catalog-item__content catalog-item__content-active">
 						<img src="../img/catalogue__item.png" alt="" class="catalog-item__img">
-						<div class="catalog-item__title">Пульсометр Polar FT1</div>
+						<div class="catalog-item__title">Пульсометр Polar FT9</div>
 						<div class="catalog-item__text">Для первых шагов в тренировках, основанных на сердечном ритме</div>
 						<a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
 					</div>
@@ -307,7 +307,33 @@
 				<div class="catalog-item__wrapper">
 					<div class="catalog-item__content catalog-item__content-active">
 						<img src="../img/catalogue__item.png" alt="" class="catalog-item__img">
-						<div class="catalog-item__title">Пульсометр Polar FT1</div>
+						<div class="catalog-item__title">Пульсометр Polar FT2</div>
+						<div class="catalog-item__text">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+						<a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+					</div>
+					<ul class="catalog-item__list">
+						<li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
+						<li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
+						<li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
+						<li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+						<a href="#" class="catalog-item__back">Назад</a>
+					</ul>
+				</div>
+
+				<hr>
+				<div class="catalog-item__footer">
+					<div class="catalog-item__prices">
+						<div class="catalog-item__old_price">4 750 руб.</div>
+						<div class="catalog-item__new_price">4 500 руб.</div>
+					</div>
+					<button class="button button__mini catalog-item__button">КУПИТЬ</button>
+				</div>
+			</div>
+			<div class="catalog-item">
+				<div class="catalog-item__wrapper">
+					<div class="catalog-item__content catalog-item__content-active">
+						<img src="../img/catalogue__item.png" alt="" class="catalog-item__img">
+						<div class="catalog-item__title">Пульсометр Polar FT3</div>
 						<div class="catalog-item__text">Для первых шагов в тренировках, основанных на сердечном ритме</div>
 						<a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
 					</div>
@@ -336,6 +362,58 @@
 					<div class="catalog-item__content catalog-item__content-active">
 						<img src="../img/catalogue__item.png" alt="" class="catalog-item__img">
 						<div class="catalog-item__title">Пульсометр Polar FT1</div>
+						<div class="catalog-item__text">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+						<a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+					</div>
+					<ul class="catalog-item__list">
+						<li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
+						<li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
+						<li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
+						<li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+						<a href="#" class="catalog-item__back">Назад</a>
+					</ul>
+				</div>
+
+				<hr>
+				<div class="catalog-item__footer">
+					<div class="catalog-item__prices">
+						<div class="catalog-item__old_price">4 750 руб.</div>
+						<div class="catalog-item__new_price">4 500 руб.</div>
+					</div>
+					<button class="button button__mini catalog-item__button">КУПИТЬ</button>
+				</div>
+			</div>
+			<div class="catalog-item">
+				<div class="catalog-item__wrapper">
+					<div class="catalog-item__content catalog-item__content-active">
+						<img src="../img/catalogue__item.png" alt="" class="catalog-item__img">
+						<div class="catalog-item__title">Пульсометр Polar FT2</div>
+						<div class="catalog-item__text">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+						<a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+					</div>
+					<ul class="catalog-item__list">
+						<li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
+						<li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
+						<li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
+						<li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+						<a href="#" class="catalog-item__back">Назад</a>
+					</ul>
+				</div>
+
+				<hr>
+				<div class="catalog-item__footer">
+					<div class="catalog-item__prices">
+						<div class="catalog-item__old_price">4 750 руб.</div>
+						<div class="catalog-item__new_price">4 500 руб.</div>
+					</div>
+					<button class="button button__mini catalog-item__button">КУПИТЬ</button>
+				</div>
+			</div>
+			<div class="catalog-item">
+				<div class="catalog-item__wrapper">
+					<div class="catalog-item__content catalog-item__content-active">
+						<img src="../img/catalogue__item.png" alt="" class="catalog-item__img">
+						<div class="catalog-item__title">Пульсометр Polar FT3</div>
 						<div class="catalog-item__text">Для первых шагов в тренировках, основанных на сердечном ритме</div>
 						<a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
 					</div>
@@ -407,14 +485,73 @@
 		</div>
 	</div>
 
-	<div class="footer map">
+	<footer class="footer">
+		<div class="footer__map">
+			<!-- <iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.43048007664!2d37.646996!3d55.768395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCAxMDcwNzg!5e0!3m2!1sru!2sru!4v1660570810993!5m2!1sru!2sru"
+				width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+			<iframe id="map_20138805" frameborder="0" width="100%" height="630px"
+				sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe>
+			<script
+				type="text/javascript">(function (e, t) { var r = document.getElementById(e); r.contentWindow.document.open(), r.contentWindow.document.write(atob(t)), r.contentWindow.document.close() })("map_20138805", "PGJvZHk+PHN0eWxlPgogICAgICAgIGh0bWwsIGJvZHkgewogICAgICAgICAgICBtYXJnaW46IDA7CiAgICAgICAgICAgIHBhZGRpbmc6IDA7CiAgICAgICAgfQogICAgICAgIGh0bWwsIGJvZHksICNtYXAgewogICAgICAgICAgICB3aWR0aDogMTAwJTsKICAgICAgICAgICAgaGVpZ2h0OiAxMDAlOwogICAgICAgIH0KICAgICAgICAuYnVsbGV0LW1hcmtlciB7CiAgICAgICAgICAgIHdpZHRoOiAyMHB4OwogICAgICAgICAgICBoZWlnaHQ6IDIwcHg7CiAgICAgICAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7CiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7CiAgICAgICAgICAgIGJveC1zaGFkb3c6IDAgMXB4IDNweCAwIHJnYmEoMCwgMCwgMCwgMC4yKTsKICAgICAgICAgICAgYm9yZGVyOiA0cHggc29saWQgIzAyODFmMjsKICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogNTAlOwogICAgICAgIH0KICAgICAgICAucGVybWFuZW50LXRvb2x0aXAgewogICAgICAgICAgICBiYWNrZ3JvdW5kOiBub25lOwogICAgICAgICAgICBib3gtc2hhZG93OiBub25lOwogICAgICAgICAgICBib3JkZXI6IG5vbmU7CiAgICAgICAgICAgIHBhZGRpbmc6IDZweCAxMnB4OwogICAgICAgICAgICBjb2xvcjogIzI2MjYyNjsKICAgICAgICB9CiAgICAgICAgLnBlcm1hbmVudC10b29sdGlwOmJlZm9yZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IG5vbmU7CiAgICAgICAgfQogICAgICAgIC5kZy1wb3B1cF9oaWRkZW5fdHJ1ZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IGJsb2NrOwogICAgICAgIH0KICAgICAgICAubGVhZmxldC1jb250YWluZXIgLmxlYWZsZXQtcG9wdXAgLmxlYWZsZXQtcG9wdXAtY2xvc2UtYnV0dG9uIHsKICAgICAgICAgICAgdG9wOiAwOwogICAgICAgICAgICByaWdodDogMDsKICAgICAgICAgICAgd2lkdGg6IDIwcHg7CiAgICAgICAgICAgIGhlaWdodDogMjBweDsKICAgICAgICAgICAgZm9udC1zaXplOiAyMHB4OwogICAgICAgICAgICBsaW5lLWhlaWdodDogMTsKICAgICAgICB9CiAgICA8L3N0eWxlPjxkaXYgaWQ9Im1hcCI+PC9kaXY+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cHM6Ly9tYXBzLmFwaS4yZ2lzLnJ1LzIuMC9sb2FkZXIuanM/cGtnPWZ1bGwmYW1wO3NraW49bGlnaHQiPjwvc2NyaXB0PjxzY3JpcHQ+KGZ1bmN0aW9uKGUpe3ZhciB0PUpTT04ucGFyc2UoZSkscj10Lm9yZGVyZWRHZW9tZXRyaWVzLG49dC5tYXBQb3NpdGlvbixhPXQuaXNXaGVlbFpvb21FbmFibGVkO2Z1bmN0aW9uIG8oZSl7cmV0dXJuIGRlY29kZVVSSUNvbXBvbmVudChhdG9iKGUpLnNwbGl0KCIiKS5tYXAoZnVuY3Rpb24oZSl7cmV0dXJuIiUiKygiMDAiK2UuY2hhckNvZGVBdCgwKS50b1N0cmluZygxNikpLnNsaWNlKC0yKX0pLmpvaW4oIiIpKX1ERy50aGVuKGZ1bmN0aW9uKCl7dmFyIGU9REcubWFwKCJtYXAiLHtjZW50ZXI6W24ubGF0LG4ubG9uXSx6b29tOm4uem9vbSxzY3JvbGxXaGVlbFpvb206YSx6b29tQ29udHJvbDohYX0pO0RHLmdlb0pTT04ocix7c3R5bGU6ZnVuY3Rpb24oZSl7dmFyIHQscixuLGEsbztyZXR1cm57ZmlsbENvbG9yOm51bGw9PT0odD1lKXx8dm9pZCAwPT09dD92b2lkIDA6dC5wcm9wZXJ0aWVzLmZpbGxDb2xvcixmaWxsT3BhY2l0eTpudWxsPT09KHI9ZSl8fHZvaWQgMD09PXI/dm9pZCAwOnIucHJvcGVydGllcy5maWxsT3BhY2l0eSxjb2xvcjpudWxsPT09KG49ZSl8fHZvaWQgMD09PW4/dm9pZCAwOm4ucHJvcGVydGllcy5zdHJva2VDb2xvcix3ZWlnaHQ6bnVsbD09PShhPWUpfHx2b2lkIDA9PT1hP3ZvaWQgMDphLnByb3BlcnRpZXMuc3Ryb2tlV2lkdGgsb3BhY2l0eTpudWxsPT09KG89ZSl8fHZvaWQgMD09PW8/dm9pZCAwOm8ucHJvcGVydGllcy5zdHJva2VPcGFjaXR5fX0scG9pbnRUb0xheWVyOmZ1bmN0aW9uKGUsdCl7cmV0dXJuInJhZGl1cyJpbiBlLnByb3BlcnRpZXM/REcuY2lyY2xlKHQsZS5wcm9wZXJ0aWVzLnJhZGl1cyk6REcubWFya2VyKHQse2ljb246ZnVuY3Rpb24oZSl7cmV0dXJuIERHLmRpdkljb24oe2h0bWw6IjxkaXYgY2xhc3M9J2J1bGxldC1tYXJrZXInIHN0eWxlPSdib3JkZXItY29sb3I6ICIrZSsiOyc+PC9kaXY+IixjbGFzc05hbWU6Im92ZXJyaWRlLWRlZmF1bHQiLGljb25TaXplOlsyMCwyMF0saWNvbkFuY2hvcjpbMTAsMTBdfSl9KGUucHJvcGVydGllcy5jb2xvcil9KX0sb25FYWNoRmVhdHVyZTpmdW5jdGlvbihlLHQpe2UucHJvcGVydGllcy5kZXNjcmlwdGlvbiYmdC5iaW5kUG9wdXAobyhlLnByb3BlcnRpZXMuZGVzY3JpcHRpb24pLHtjbG9zZUJ1dHRvbjohMCxjbG9zZU9uRXNjYXBlS2V5OiEwfSksZS5wcm9wZXJ0aWVzLnRpdGxlJiZ0LmJpbmRUb29sdGlwKG8oZS5wcm9wZXJ0aWVzLnRpdGxlKSx7cGVybWFuZW50OiEwLG9wYWNpdHk6MSxjbGFzc05hbWU6InBlcm1hbmVudC10b29sdGlwIn0pfX0pLmFkZFRvKGUpfSl9KSgneyJvcmRlcmVkR2VvbWV0cmllcyI6W3sidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7ImNvbG9yIjoiI2YyMDIwNiIsInRpdGxlIjoiIiwiZGVzY3JpcHRpb24iOiJQSEErVUhWc2MyOXRaWFJsY2p3dmNEND0iLCJ6SW5kZXgiOjEwMDAwMDAwMDB9LCJnZW9tZXRyeSI6eyJ0eXBlIjoiUG9pbnQiLCJjb29yZGluYXRlcyI6WzM3LjY0NjgzNiw1NS43Njg3M119LCJpZCI6Njd9XSwibWFwUG9zaXRpb24iOnsibGF0Ijo1NS43NjkzMTkzMjE3MTIyMSwibG9uIjozNy42NDQ4NDY0MzkzNjE1OCwiem9vbSI6MTZ9LCJpc1doZWVsWm9vbUVuYWJsZWQiOmZhbHNlfScpPC9zY3JpcHQ+PHNjcmlwdCBhc3luYz0iIiB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cHM6Ly93d3cuZ29vZ2xldGFnbWFuYWdlci5jb20vZ3RhZy9qcz9pZD1VQS0xNTg4NjYxNjgtMSI+PC9zY3JpcHQ+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPihmdW5jdGlvbihlKXtmdW5jdGlvbiB0KCl7ZGF0YUxheWVyLnB1c2goYXJndW1lbnRzKX13aW5kb3cuZGF0YUxheWVyPXdpbmRvdy5kYXRhTGF5ZXJ8fFtdLHQoImpzIixuZXcgRGF0ZSksdCgiY29uZmlnIixlKSx3aW5kb3cuZ3RhZz10fSkoJ1VBLTE1ODg2NjE2OC0xJyk8L3NjcmlwdD48L2JvZHk+")</script>
+
+		</div>
+		<div class=" footer__info">
+			<adress class="footer__adress">Москва, Мясницкий проезд, д.3с1</adress>
+			<a class="footer__phone" href="tel:84999228974">8 (499) 922-89-74</a>
+			<div class="footer__links">
+				<a href="" class="footer__link"><img src="img/icons/fb.png" alt="facebook"></a>
+				<a href="" class="footer__link"><img src="img/icons/inst.png" alt="instagram"></a>
+				<a href="" class="footer__link"><img src="img/icons/pinterest.png" alt="pinterest"></a>
+			</div>
+		</div>
+	</footer>
+
+	<div class="overlay">
+
+		<div class="modal" id="consultation">
+			<div class="modal__close">&times;</div>
+			<div class="modal__title">Просто заполните форму заявки</div>
+			<div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+			<form action="" class="consultation__form">
+				<input class="input consultation__form__item" name="name" type="text" placeholder="Ваше имя">
+				<input class="input consultation__form__item" name="phone" type="tel" placeholder="Ваш телефон">
+				<input class="input consultation__form__item" name="email" type="email" placeholder="Ваш E-mail">
+				<button class="button consultation__form__item consultation__form__button">Заказать консультацию</button>
+			</form>
+		</div>
+
+		<div class="modal" id="order">
+			<div class="modal__close">&times;</div>
+			<div class="modal__title">Ваш заказ:</div>
+			<div class="modal__descr">Пульсометр Polar FT1</div>
+			<form action="" class="consultation__form">
+				<input class="input consultation__form__item" name="name" type="text" placeholder="Ваше имя">
+				<input class="input consultation__form__item" name="phone" type="tel" placeholder="Ваш телефон">
+				<input class="input consultation__form__item" name="email" type="email" placeholder="Ваш E-mail">
+				<button class="button consultation__form__item consultation__form__button">купить</button>
+			</form>
+		</div>
+
+		<div class="modal modal__mini" id="thanks">
+			<div class="modal__close">&times;</div>
+			<div class="modal__title">Спасибо за вашу заявку!</div>
+			<div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
+		</div>
 	</div>
+
+
+
 
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script type="text/javascript" src="js/slick.min.js"></script>
-	<script src="js/slider.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+
+	<script src="js/jquery.inputmask.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 
 </html>
