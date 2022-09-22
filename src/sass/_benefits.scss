@@ -28,6 +28,19 @@
 		}
 	}
 
+	// &__img {
+	// 	&-animated {
+	// 		animation-duration: 2s;
+	// 		animation-timing-function: ease;
+	// 		animation-iteration-count: infinite;
+	// 		animation-play-state: running;
+
+	// &:hover {
+	// 	animation-play-state: paused;
+	// }
+	// }
+	// }
+
 	&__head {
 		margin-top: 38px;
 		font-size: 18px;

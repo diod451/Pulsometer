@@ -1,21 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Пульсометры</title>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/styles.min.css">
-	<link rel="stylesheet" type="text/css" href="css/slick.css" />
+	<link rel="stylesheet" type="text/css" href="css/styles.min.css">
 	<link rel="stylesheet" href="fonts/MuseoModerno-VariableFont_wght.ttf">
 </head>
 
 <body>
 	<div class="main">
 		<div class="container">
-			<header class="header">
+			<header id="up" class="header">
 				<div class="header__logo">
 					<img src="img/header__logo.png" alt="">
 				</div>
@@ -62,7 +60,8 @@
 					полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
 			</div>
 			<div class="benefits__element">
-				<img src="img/benefits__hearth.png" alt="" class="benefits__img">
+				<img src="img/benefits__hearth.png" alt=""
+					class="benefits__img benefits__img-animated animate__animated animate__heartBeat ">
 				<div class="benefits__head">Заботимся о здоровье</div>
 				<div class="benefits__text">Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и
 					были в радость Вам и Вашим близким!
@@ -78,12 +77,12 @@
 		</div>
 	</div>
 
-	<!-- <div class="consultation">
+	<div class="consultation">
 		<div class="container">
 			<h2 class="consultation__title">Получите бесплатную консультацию<br>по подбору пульсометра</h2>
 			<div class="consultation__subtitle">Просто заполните форму заявки и мы перезвоним вам в течении 10 минут</div>
 
-			<form action="" class="consultation__form">
+			<form action="#" class="consultation__form">
 				<input class="input consultation__form__item" name="name" type="text" placeholder="Ваше имя">
 				<input class="input consultation__form__item" name="phone" type="tel" placeholder="Ваш телефон">
 				<input class="input consultation__form__item" name="email" type="email" placeholder="Ваш E-mail">
@@ -91,7 +90,7 @@
 			</form>
 		</div>
 
-	</div> -->
+	</div>
 
 	<div class="container carousele">
 		<div class="carousele__inner">
@@ -440,7 +439,7 @@
 
 	<div class="container reviews">
 		<h2 class="reviews__title">отзывы клиентов</h2>
-		<div class="reviews__review">
+		<div class="reviews__review animate__animated animate__bounceInUp wow">
 			<img src="img/reviews__1.png" alt="" class="review__img">
 			<div class="review__block">
 				<div class="review__name">Ирина Иванченко</div>
@@ -453,7 +452,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="reviews__review">
+		<div class="reviews__review animate__animated animate__bounceInUp wow">
 			<img src="img/reviews__2.png" alt="" class="review__img">
 			<div class="review__block">
 				<div class="review__name">Иван Сёмочкин</div>
@@ -467,7 +466,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="reviews__review">
+		<div class="reviews__review animate__animated animate__bounceInUp wow">
 			<img src="img/reviews__3.png" alt="" class="review__img">
 			<div class="review__block">
 				<div class="review__name">Юлия Дашкина</div>
@@ -541,6 +540,10 @@
 		</div>
 	</div>
 
+	<a href="#up" class="pageup">
+		<img src="img/up.svg" alt="up">
+	</a>
+
 
 
 
@@ -549,8 +552,11 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script src="js/jquery.validate.min.js"></script>
-
 	<script src="js/jquery.inputmask.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 	<script src="js/script.js"></script>
 </body>
 

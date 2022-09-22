@@ -3,8 +3,6 @@ body {
 	box-sizing: border-box;
 }
 
-ul {}
-
 .container {
 	width: 940px;
 	margin: 0 auto;
@@ -31,8 +29,13 @@ ul {}
 	margin-bottom: 15px;
 }
 
+@import 'normalize';
 @import 'variables';
 @import 'fonts';
+@import 'slick';
+@import 'animate';
+@import 'animation';
+
 @import 'header';
 @import 'benefits';
 @import 'consultation';
@@ -41,4 +44,5 @@ ul {}
 @import 'reviews';
 @import 'carousele';
 @import 'footer';
+@import 'pageup';
 @import 'modal';
